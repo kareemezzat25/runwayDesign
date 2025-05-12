@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:runway_app/views/homeview.dart';
+import 'package:runway_app/views/modelview.dart';
 import 'package:runway_app/views/splashview.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
           routes: {
             SplashView.routeName: (context) => SplashView(),
             HomeView.routeName: (context) => HomeView(),
+            ModelView.routeName: (context) => ModelView(),
           },
           debugShowCheckedModeBanner: false,
         );

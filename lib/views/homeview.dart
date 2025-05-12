@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:runway_app/core/resources/app_assets.dart';
 import 'package:runway_app/core/resources/app_colors.dart';
 import 'package:runway_app/core/resources/app_data.dart';
+import 'package:runway_app/widgets/category_Item.dart';
 import 'package:runway_app/widgets/customappbar.dart';
 import 'package:video_player/video_player.dart';
 
@@ -70,23 +71,10 @@ class _HomeViewState extends State<HomeView> {
                       scrollDirection: Axis.horizontal,
 
                       itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            Image.asset(
+                        return CategoryItem(
+                          categoryImage:
                               AppData.categories[index].categoryImage,
-                              width: 75,
-                              fit: BoxFit.fill,
-                            ),
-                            Gap(12),
-                            Text(
-                              AppData.categories[index].categoryName,
-                              style: GoogleFonts.inter(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: AppColors.textBlackColor,
-                              ),
-                            ),
-                          ],
+                          categoryName: AppData.categories[index].categoryName,
                         );
                       },
                       separatorBuilder: (context, index) {
