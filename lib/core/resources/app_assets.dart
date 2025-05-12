@@ -1,6 +1,7 @@
 const String imageCategory = "assets/images/categories";
 const String logopath = "assets/logo";
 const String svgsPath = "assets/svgs";
+const String videosPath = "assets/videos";
 
 class AppAssets {
   static const String appLogo = "$logopath/Runway.png";
@@ -8,7 +9,7 @@ class AppAssets {
   static const String menCategory = "$imageCategory/men.png";
   static const String kidsCategory = "$imageCategory/kids.png";
   static const String dealsCategory = "$imageCategory/deals.png";
-  static const String homeCategory = "$imageCategory/home.png";
+  static const String homeCategory = "$imageCategory/Home.png";
 
   static const String chartIcon = "$svgsPath/bar-chart.svg";
   static const String cartIcon = "$svgsPath/cart.svg";
@@ -18,4 +19,6 @@ class AppAssets {
   static const String notificationIcon = "$svgsPath/notification.svg";
   static const String sortIcon = "$svgsPath/sort.svg";
   static const String usersIcon = "$svgsPath/users.svg";
+
+  static const String homeVideo = "$videosPath/homevideo.mov";
 }

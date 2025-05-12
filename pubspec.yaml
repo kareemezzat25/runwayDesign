@@ -22,6 +22,8 @@ dependencies:
   flutter_svg: ^2.1.0
   svg_path_parser: ^1.1.2
   google_fonts: ^6.2.1
+  video_player: ^2.9.5
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -34,9 +36,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
+    - assets/images/categories/
     - assets/logo/
     - assets/svgs/
+    - assets/videos/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
