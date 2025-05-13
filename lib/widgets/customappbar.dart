@@ -8,11 +8,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   String leadingIcon;
   String title;
   String suffixIcon;
+  Function()? onTap;
 
   CustomAppBar({
     required this.leadingIcon,
     required this.title,
     required this.suffixIcon,
+    this.onTap,
     super.key,
   });
 
@@ -26,7 +28,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
         children: [
-          SvgPicture.asset(leadingIcon, width: 24),
+          GestureDetector(
+            onTap: onTap,
+            child: SvgPicture.asset(leadingIcon, width: 24),
+          ),
           Text(
             title,
             style: GoogleFonts.inter(

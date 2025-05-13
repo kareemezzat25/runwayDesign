@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:runway_app/core/resources/app_colors.dart';
-import 'package:runway_app/core/resources/app_data.dart';
 import 'package:runway_app/views/modelview.dart';
 
 class CategoryItem extends StatelessWidget {
